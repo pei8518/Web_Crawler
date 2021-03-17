@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*- 
+﻿# -*- coding: UTF-8 -*- 
 # facebook crawler
 # facebook address example: https://www.facebook.com/weather.taiwan/
 # 抓取臉書社團前一個月，社團成員分享文章次數。
@@ -57,7 +57,7 @@ driver.find_element_by_id("pass").send_keys(f'{password}')     #輸入密碼
 driver.find_element_by_id("loginbutton").click()
 time.sleep(3)
 #進入指定社團
-driver.get('https://zh-tw.facebook.com/8518go/')  #<--------- 替換為你需要的臉書社團網址
+driver.get('https://www.facebook.com/weather.taiwan/')  #<--------- 替換為你需要的臉書社團網址
 time.sleep(5)
 
 soup = BeautifulSoup(driver.page_source)
